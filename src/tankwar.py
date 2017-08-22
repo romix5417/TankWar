@@ -19,13 +19,15 @@ def start():
     # Wall_3 = wall()
     # Wall_3.set_location(40, 40)
 
-    playerTank = Tank('humen', 0, 0)
+    playerTank  = Tank('humen', 0, 0)
+    playerTank2 = aitank('ai', 100, 100, 1)
 
     # Windows.add_surface(Wall.wall_image, Wall.x, Wall.y)
     # Windows.add_surface(Wall_1.wall_image, Wall_1.x, Wall_1.y)
     # Windows.add_surface(Wall_2.wall_image, Wall_2.x, Wall_2.y)
     # Windows.add_surface(Wall_3.wall_image, Wall_3.x, Wall_3.y)
     Windows.add_player(playerTank)
+    Windows.add_ai(playerTank2)
 
     Windows.run()
 
